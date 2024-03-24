@@ -5,7 +5,7 @@ const cssnano    = require("cssnano");
 const plumber = require("gulp-plumber");
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
-const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 var merge = require('merge-stream');
 var sourcemaps = require("gulp-sourcemaps");
 

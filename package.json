@@ -5,18 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp watch",
-    "build": "gulp copyAddonsScripts && gulp copyAddonsStyles"
+    "build": "gulp copyAddonsScripts && gulp copyAddonsStyles && gulp css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://jithinb68@bitbucket.org/jithinb68/simple_landingpage.git"
+    "url": "git@github.com:hennadiy-kudashev/sol-diez.git"
   },
   "engines": {
     "node": ">=16.17.0 <17.0.0"
   },
-  "author": "",
+  "author": "Hennadiy Kudashev",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/jithinb68/simple_landingpage#readme",
+  "homepage": "https://sol-diez.onrender.com/",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
@@ -26,6 +26,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.1.0",
+    "sass": "^1.72.0",
     "gulp-sourcemaps": "^2.6.5",
     "merge-stream": "^2.0.0"
   },
