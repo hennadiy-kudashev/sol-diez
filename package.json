@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp watch",
-    "build": "gulp serve"
+    "build": "gulp copyAddonsScripts && gulp copyAddonsStyles"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^6.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "merge-stream": "^2.0.0"
   },
