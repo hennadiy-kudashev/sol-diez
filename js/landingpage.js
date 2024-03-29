@@ -38,7 +38,7 @@ $('.owl-carousel').owlCarousel({
 
 // SCROLLSPY
 $(document).ready(function() {
-  $(".nav-link").click(function() {
+  $(".nav-scroll").click(function() {
       var t = $(this).attr("href");
       $("html, body").animate({
           scrollTop: $(t).offset().top - 75
@@ -53,13 +53,13 @@ $(document).ready(function() {
 
 // AOS
 AOS.init({
-    offset: 120, 
+    offset: 120,
     delay: 0,
-    duration: 1200, 
-    easing: 'ease', 
-    once: true, 
-    mirror: false, 
-    anchorPlacement: 'top-bottom', 
+    duration: 1200,
+    easing: 'ease',
+    once: true,
+    mirror: false,
+    anchorPlacement: 'top-bottom',
     disable: "mobile"
   });
 

@@ -61,7 +61,9 @@ gulp.task('copyAddonsScripts', function() {
       .pipe(gulp.dest('vendors/aos/js'));
   var aScript5 = gulp.src(['node_modules/bootstrap/* '])
       .pipe(gulp.dest('vendors/bootstrap'));
-  return merge(aScript1, aScript2, aScript3, aScript4, aScript5);
+  var aScript6 = gulp.src(['node_modules/mdi/fonts/*'])
+    .pipe(gulp.dest('vendors/mdi/fonts'));
+  return merge(aScript1, aScript2, aScript3, aScript4, aScript5, aScript6);
 });
 
 
