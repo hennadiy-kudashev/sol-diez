@@ -35,9 +35,7 @@ const config = {
 };
 
 ftpDeploy.on("uploading", function (data) {
-  console.log(data.totalFilesCount); // total file count being transferred
-  console.log(data.transferredFileCount); // number of files transferred
-  console.log(data.filename); // partial path with filename being uploaded
+  console.log(`Deployed ${data.transferredFileCount} files of ${data.totalFilesCount}: ${data.filename}`);
 });
 
 ftpDeploy
