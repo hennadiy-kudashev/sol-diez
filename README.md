@@ -1,0 +1,1 @@
+[![Deploy to 1GB](https://github.com/hennadiy-kudashev/sol-diez/actions/workflows/1gb_deploy.yml/badge.svg?branch=master&event=push)](https://github.com/hennadiy-kudashev/sol-diez/actions/workflows/1gb_deploy.yml)
