@@ -1,0 +1,36 @@
+name: Deploy to 1GB
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build and Deploy to 1GB
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v1
+
+      - name: Set Node version to 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - uses: c-hive/gha-yarn-cache@v1
+      - name: Install deps
+        run: |
+          yarn install
+
+      - name: Build components
+        run: |
+          yarn build
+
+      - name: Deploy to 1GB
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          yarn deploy

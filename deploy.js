@@ -9,11 +9,11 @@ const config = {
   port: 21,
   localRoot: __dirname,
   remoteRoot: "/http/",
-  include: ["videos/**"],      // this would upload everything except dot files
-  //include: ["*", "**/*"],      // this would upload everything except dot files
+  include: ["*", "**/*"],      // this would upload everything except dot files
   // e.g. exclude sourcemaps, and ALL files in node_modules (including dot files)
   exclude: [
     "css/**/*.map",
+    "videos/**",
     "node_modules/**",
     "node_modules/**/.*",
     "node_modules/**/.*/**",
