@@ -9,7 +9,8 @@ const config = {
   port: 21,
   localRoot: __dirname,
   remoteRoot: "/http/",
-  include: ["*", "**/*"],      // this would upload everything except dot files
+  include: ["videos/**"],      // this would upload everything except dot files
+  //include: ["*", "**/*"],      // this would upload everything except dot files
   // e.g. exclude sourcemaps, and ALL files in node_modules (including dot files)
   exclude: [
     "css/**/*.map",
@@ -35,10 +36,10 @@ const config = {
 };
 
 ftpDeploy.on("uploading", function (data) {
-  console.log(`Deployed ${data.transferredFileCount} files of ${data.totalFilesCount}: ${data.filename}`);
+  console.log(`Deploying ${data.transferredFileCount} files of ${data.totalFilesCount}: ${data.filename}`);
 });
 
 ftpDeploy
   .deploy(config)
-  .then((res) => console.log("finished:", res))
+  .then((res) => console.log(`Deployed ${res.length} files`))
   .catch((err) => console.log(err));

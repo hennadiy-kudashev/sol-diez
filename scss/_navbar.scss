@@ -5,14 +5,26 @@
     line-height: inherit;
     .mdi-menu {
       font-size: 30px;
+      color: $third-color;
     }
     .mdi-close {
       font-size: 20px;
+      color: $third-color;
     }
   }
   .navbar-menu-wrapper {
     .navbar-nav {
       .btn-contact-us {
+        .btn {
+          color: #000 !important;
+          background-color: $secondary-color !important;
+          border-color: $secondary-color !important;
+          &:hover {
+            color: $secondary-color !important;
+            background-color: transparent !important;
+            border-color: $secondary-color !important;
+          }
+        }
         margin-left: 148px;
         white-space: nowrap;
         @media (max-width: 992px) {
@@ -25,11 +37,11 @@
         font-weight: 500;
         color: #111111;
         &:hover {
-          color: #ff0000;
+          color: $primary-color;
           transition: all 0.3s ease;
         }
         &.active {
-          color: #ff0000;
+          color: $primary-color;
         }
       }
     }
