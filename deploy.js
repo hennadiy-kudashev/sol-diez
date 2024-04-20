@@ -18,6 +18,7 @@ const config = {
     "node_modules/**/.*",
     "node_modules/**/.*/**",
     ".git/**",
+    ".github/**",
     ".idea/**",
     "scss/**",
     "gulpfile.js",
