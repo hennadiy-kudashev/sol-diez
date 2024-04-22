@@ -155,6 +155,9 @@ body {
 
 // SECTION-7
 .contact-details {
+  .contact-details-row {
+    justify-content: space-between;
+  }
   .mdi {
     font-size: 14px;
     color: #6e6e6e;
