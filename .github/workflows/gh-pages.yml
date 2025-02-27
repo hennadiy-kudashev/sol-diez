@@ -38,6 +38,10 @@ jobs:
         run: yarn install
       - name: Build components
         run: yarn build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
 
   # Deployment job
   deploy:
