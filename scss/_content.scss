@@ -2,21 +2,26 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0px;
   color: #000000;
+
   &.body-top-padding {
     padding-top: 167px;
   }
+
   a:hover {
     text-decoration: none;
   }
+
   &.sidebar-open {
     .fixed-top {
       background-color: transparent;
+
       .navbar-brand-wrapper {
         img {
           display: none;
         }
       }
     }
+
     &::before {
       position: fixed;
       content: "";
@@ -44,28 +49,35 @@ body {
   .content-header {
     padding: 78px 0px 48px 0px;
     text-align: center;
+
     @media (max-width: 992px) {
       padding: 60px 0px;
     }
   }
+
   .readmore-link {
     font-size: 13px;
     color: #97a3be;
     font-weight: 500;
     transition: color 0.5s ease-in-out;
+
     &:hover {
       color: #ff0000;
     }
   }
+
   .features-width {
     flex-basis: 61%;
+
     @media (max-width: 767px) {
       flex-basis: 100%;
     }
   }
+
   .img-icons {
     width: 77px;
     transition: all 0.4s ease-in-out;
+
     &:hover {
       transform: scale(1.1);
     }
@@ -77,13 +89,21 @@ body {
   .content-header {
     padding: 40px 0px 40px 0px;
     text-align: center;
+
     @media (max-width: 992px) {
       padding: 20px 0px;
     }
   }
+
   @media (max-width: 992px) {
-    .flex-item:nth-of-type(1) { order: 2; }
-    .flex-item:nth-of-type(2) { order: 1; }
+    .flex-item:nth-of-type(1) {
+      order: 2;
+    }
+
+    .flex-item:nth-of-type(2) {
+      order: 1;
+    }
+
     .img-digital {
       text-align: center;
     }
@@ -92,17 +112,29 @@ body {
 
 // SECTION-4
 .case-studies {
+  .content-header {
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+
+    @media (max-width: 992px) {
+      padding: 20px 0px;
+    }
+  }
+
   .color-cards {
-    .c-video{
+    .c-video {
       width: 100%;
     }
   }
+
   .bg-violet {
     background: #bbbbf2;
   }
+
   .case-studies-card-img {
     height: 106px;
   }
+
   .card-desc-box {
     position: absolute;
     top: 0;
@@ -122,18 +154,22 @@ body {
     font-size: 18px;
     margin: 0px 12px;
     transition: all 0.7s ease-in-out;
+
     .img-customer {
       width: 89px;
       border-radius: 50%;
       transition: all 0.7s ease-in-out;
     }
+
     &:hover {
       background: #e4e7ea;
       transform: scale(1.02);
+
       .img-customer {
         transform: scale(1.05);
       }
     }
+
     .content-divider {
       width: 73px;
       height: 3px;
@@ -145,9 +181,9 @@ body {
 .contact-us {
   .contact-us-bgimage {
     background-image: url('../images/gdpr.jpg');
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     padding: 83px 0px 68px 0px;
   }
@@ -158,6 +194,7 @@ body {
   .contact-details-row {
     justify-content: space-between;
   }
+
   .mdi {
     font-size: 14px;
     color: #6e6e6e;
@@ -166,14 +203,17 @@ body {
     padding: 3px 6px;
     margin-right: 10px;
     transition: all 0.6s ease-in-out;
+
     &:hover {
       background: #a6a6a6;
       color: white;
     }
   }
+
   a {
     color: $text-muted;
     transition: all 0.6s ease-in-out;
+
     &:hover {
       color: #ff0000;
     }
@@ -183,6 +223,7 @@ body {
 footer {
   a {
     color: #ff0000;
+
     &:hover {
       color: black;
     }
@@ -190,30 +231,33 @@ footer {
 }
 
 // COMMON
-.section-subtitle, .customer-designation {
+.section-subtitle,
+.customer-designation {
   font-weight: normal;
 }
 
 // SCROLL -SMALL HEADER
 .header-small {
-    .navbar {
-      background: white;
-      padding: 18px 0px 18px 0px;
-      -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
-      -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
-      box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
-      &.fixed-top {
-        top: -50px;
-        margin-top: 50px;
-        transition: margin-top 1s ease;
-      }
-      .btn {
-        @media (min-width: 992px) {
-          padding: 5px 10px;
-          margin-left: 20px;
-        }
+  .navbar {
+    background: white;
+    padding: 18px 0px 18px 0px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+
+    &.fixed-top {
+      top: -50px;
+      margin-top: 50px;
+      transition: margin-top 1s ease;
+    }
+
+    .btn {
+      @media (min-width: 992px) {
+        padding: 5px 10px;
+        margin-left: 20px;
       }
     }
+  }
 }
 
 // OWL-CAROUSAL
@@ -222,11 +266,13 @@ footer {
   text-align: center;
   color: #6e6e6e
 }
+
 .owl-theme {
   .owl-dots {
     .owl-dot {
       outline: none;
-      span   {
+
+      span {
         display: inline-block;
         width: 0.9375rem;
         height: 0.9375rem;
@@ -239,6 +285,7 @@ footer {
         transition: all 0.3s ease-in-out;
         opacity: 0.7;
       }
+
       &.active {
         span {
           background-color: transparent;
@@ -250,21 +297,25 @@ footer {
     }
   }
 }
+
 .owl-carousel {
   .owl-item {
     padding: 16px 0px;
+
     img {
       width: auto;
       margin: 0 auto;
     }
   }
 }
+
 .owl-item {
   &:nth-child(odd) {
     .content-divider {
       background-color: black;
     }
   }
+
   &:nth-child(even) {
     .content-divider {
       background-color: $secondary-color;
@@ -279,7 +330,3 @@ footer {
     padding: 0px 30px;
   }
 }
-
-
-
-

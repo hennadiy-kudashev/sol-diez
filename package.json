@@ -13,7 +13,7 @@
     "url": "git@github.com:hennadiy-kudashev/sol-diez.git"
   },
   "engines": {
-    "node": ">=16.17.0 <17.0.0"
+    "node": ">=16.17.0 <20.21.0"
   },
   "author": "Hennadiy Kudashev",
   "license": "ISC",
